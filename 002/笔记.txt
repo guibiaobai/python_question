@@ -1,0 +1,43 @@
+今天下载了一个知乎的爬虫(https://github.com/egrcc/zhihu-python)，在本地运行。缺了很多第三方的库，分别安装
+
+下载 xxxx
+解压缩 tar zxf xxx.tar.gz
+安装  python setup.py install
+
+ajax的实现原理
+向后台的php 提交json
+
+在后台中是如何结构json，json就是以post接受
+再解析josn，返回合适的json
+
+错误1
+ValueError : No JSON object could be decoded
+
+
+调试代码中遇到的问题
+出现了缩进错误，不是使用tab建的
+
+解决方法
+复制一行，在一行中修改
+
+思考
+在代码中，是如何将cookies 和session 保存起来的
+如何知道网站要什么样的cookies或sesion
+通过浏览器的抓包分析? 
+
+
+
+原因是
+提供的用户名和密码错误，不能直接使用第三方的
+无法成功验证，所以得到的是403页面，
+返回不了json的内容
+
+注册了的163邮箱，不能激活码
+注册了yahoo的邮箱，激活成功
+
+
+成功在本地运行一段，遇到编码的问题，中止爬，尝试在linux系统中运行，明天测试
+
+错误2
+unicodeencodeerror python gbk codec can't
+
