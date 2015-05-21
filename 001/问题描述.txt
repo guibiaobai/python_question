@@ -1,0 +1,7 @@
+ValueError : No JSON object could be decoded
+
+原因
+
+解决方法是将 检查json的格式是否正确，使用" "
+重新将json文件以UTF8无BOM方式保存了一下，运行成功了。
+
